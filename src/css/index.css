@@ -199,7 +199,6 @@ background: linear-gradient(90deg, rgba(5,5,5,1) 5%, rgba(20,11,51,1) 50%, rgba(
     transform: rotate(0deg);
     transition: var(--transition-speed);
   }
-  
   .logo-text
   {
     display: inline;
@@ -218,18 +217,34 @@ background: linear-gradient(90deg, rgba(5,5,5,1) 5%, rgba(20,11,51,1) 50%, rgba(
       bottom: 0;
       width: 100vw;
       height: 5rem;
+      transition: ease-in-out .5s;
     }
   
-    .logo {
-      display: none;
+    .navbar:hover {
+      height: 7rem;
     }
+    .navbar:hover .link-text {
+      display: inline;
+      font-size: .8rem;
+    }
+    
   
     .navbar-nav {
       flex-direction: row;
     }
-  
+    .navbar:hover .logo svg {
+      transform: rotate(-90deg);
+    }
     .nav-link {
       justify-content: center;
+      height: 6rem;
+    }
+
+    .navbar:hover .nav-link{
+      display: flex;
+      height: 8rem;
+      flex-direction: column-reverse;
+
     }
   
     main {
@@ -244,10 +259,10 @@ background: linear-gradient(90deg, rgba(5,5,5,1) 5%, rgba(20,11,51,1) 50%, rgba(
       width: 5rem;
       height: 100vh;
     }
-  
     .navbar:hover {
       width: 18rem;
     }
+    
   
     .navbar:hover .link-text {
       display: inline;
