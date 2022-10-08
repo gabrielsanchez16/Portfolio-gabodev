@@ -315,13 +315,23 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 4;
+  z-index: 1;
 }
 
 .gabriel {
-  width: 30rem;
-  border-radius: 1.5rem;
+  width: 32rem;
+  border-radius: 50%;
   margin: 0 auto;
+}
+
+.redes {
+  display:flex;
+  justify-content: space-around;
+
+}
+.redes a  {
+  font-size: 3rem;
+  color: #df49a6;
 }
 
 /* Small screens */
@@ -393,8 +403,19 @@ main {
 	}
   .gabriel {
     width: 20rem;
-    border-radius: 1.5rem;
+    
     margin: 0 auto;
+  }
+
+  .redes {
+    justify-content: center;
+    gap: 3rem;
+  
+  }
+
+  .redes a  {
+    font-size: 1.5rem;
+    
   }
 }
 
