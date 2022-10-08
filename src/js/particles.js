@@ -49,7 +49,7 @@ var pJS = function(tag_id, params){
         random: false,
         anim: {
           enable: false,
-          speed: 2,
+          speed: 3,
           opacity_min: 0,
           sync: false
         }
@@ -78,7 +78,7 @@ var pJS = function(tag_id, params){
         random: false,
         straight: false,
         out_mode: 'out',
-        bounce: false,
+        bounce: true,
         attract: {
           enable: false,
           rotateX: 3000,

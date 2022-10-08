@@ -1,0 +1,9 @@
+{
+    "nav": {
+        "about": "/Sobre.mi",
+        "education": "/Educacion",
+        "works" : "/Trabajos",
+        "contact": "/Contactame",
+        "theme": "{Tema}"
+      }
+}

@@ -1,0 +1,9 @@
+{
+    "nav": {
+        "about": "/About.me",
+        "education": "/Education",
+        "works" : "/Works",
+        "contact": "/Contact.me",
+        "theme": "{Theme}"
+    }
+}
