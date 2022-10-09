@@ -203,7 +203,7 @@ main {
   text-align: center;
   color: var(--text-secondary);
   background: var(--bg-secondary);
-  font-size: 1.5rem;
+  font-size: 1rem;
   letter-spacing: 0.3ch;
   width: 100%;
 }
@@ -230,7 +230,7 @@ main {
   width: 7.5rem;
   position: fixed;
   right: 2rem;
-  bottom: 2rem;
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -259,11 +259,10 @@ main {
 	color: #df49a6;
 	background: var(--bg-primary);
 	padding: 1.2rem 2rem;
-  
   margin: 0 auto;
   border-radius: 1rem;
 	transition: .5s ease all;
-	font-size: 3rem;
+	font-size: 2rem;
 	font-family: 'Noto Sans', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
@@ -322,6 +321,7 @@ main {
   width: 32rem;
   border-radius: 50%;
   margin: 0 auto;
+  border: 1rem solid #000;
 }
 
 .redes {
@@ -332,7 +332,24 @@ main {
 .redes a  {
   font-size: 3rem;
   color: #df49a6;
+  transition: .5s ease-in-out;
 }
+
+.redes a:hover {
+  font-size: 3.5rem;
+  color: #ffffff;
+}
+
+.content-footer {
+  background: #23232e;
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem;
+  
+  
+}
+
+
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
@@ -403,7 +420,6 @@ main {
 	}
   .gabriel {
     width: 20rem;
-    
     margin: 0 auto;
   }
 
