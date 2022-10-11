@@ -13,6 +13,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   /*1rem igual a 10px*/
+  
 }
 
 *,
@@ -30,7 +31,8 @@ body {
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100vh;
-  cursor: url("../img/avataaars.svg");
+  cursor: url(../img/tumblr_pjabb3fBB91uhdr2mo1_250.gif), auto;
+
 }
 
 @keyframes gradient {
@@ -49,7 +51,7 @@ body {
 
 #particles-js {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: relative;
   z-index: 10;
 }
@@ -257,7 +259,7 @@ main {
 .logotipo .subtitulo {
 	text-align: center;
 	color: #df49a6;
-	background: var(--bg-primary);
+	background: var(--bg-secondary);
 	padding: 1.2rem 2rem;
   margin: 0 auto;
   border-radius: 1rem;
@@ -265,7 +267,9 @@ main {
 	font-size: 2rem;
 	font-family: 'Noto Sans', sans-serif;
 	text-transform: uppercase;
-	letter-spacing: 0.1rem;
+	
+  font-family: 'Lato', sans-serif;
+font-family: 'Silkscreen', cursive;
 }
 
 .logotipo:hover .subtitulo {
@@ -277,6 +281,7 @@ main {
 	display: flex;
 	justify-content: center;
 	overflow: hidden;
+  
 }
 
 .texto-animado > div {
@@ -321,7 +326,13 @@ main {
   width: 32rem;
   border-radius: 50%;
   margin: 0 auto;
-  border: 1rem solid #000;
+  border: 1rem solid var(--bg-primary);
+  transition: .7s ease-in-out;
+}
+
+.gabriel:hover{
+  transform: scale(1.1);
+    border-color: #df49a6;
 }
 
 .redes {
@@ -341,17 +352,210 @@ main {
 }
 
 .content-footer {
-  background-color: #111010;
-  color: #ffffff;
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
   text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Silkscreen', cursive;
   padding: 3rem;
   font-weight: 600;
 }
 
 
+/* Sobre mi */
+
+.about-me {
+  margin: 8rem auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  padding: 4rem 0;
+  border-radius: 1rem;
+  width: 80%;
+  color: var(--text-secondary)
+}
+
+.about-me h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Silkscreen', cursive;
+}
+.about-me img {
+  width: 20rem;
+  border: 1rem solid var(--bg-primary);
+  border-radius: 50%;
+  transition: .7s ease-in-out;
+}
+.palabras-claves{
+  color: #8438ff;
+}
+.about-me img:hover {
+    transform: scale(1.1);
+    border-color: #8438ff;
+}
+.titulo-sobre h2{
+  margin: 0;
+}
+.titulo-sobre p {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.descripcion {
+  padding: 0 10rem;
+  text-align: center;
+}
+
+/* habilidades blandas */
+
+.habilidades-blandas {
+  margin: 8rem auto;
+  background-color: var(--bg-secondary);
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  width: 70%;
+  color: var(--text-secondary)
+}
+
+
+.contenedor-habilidades{
+  width: 100%;
+}
+.contenedor-habilidades h3 {
+  letter-spacing: 0.2rem;
+}
+
+.hab:not(:last-child){
+  margin-bottom: 3rem;
+}
+
+.detalles {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+
+.menu {
+  position: relative;
+  border: 0.1rem solid #8438ff;
+  border-radius: 2rem;
+}
+
+.menu div {
+  position: relative;
+  width: 0;
+  height: 1rem;
+  border-radius: 1rem;
+  background-color: #8438ff;
+}
+
+/* Animacion */
+
+#comunicacion-mu {
+  animation: comunicacion-barra 3s forwards;
+}
+
+
+@keyframes comunicacion-barra {
+  100%{
+    width: 90%;
+  }
+}
+
+#flexibilidad-mu {
+  animation: flexibilidad-barra 2s forwards;
+}
+
+
+@keyframes flexibilidad-barra {
+  100%{
+    width: 95%;
+  }
+}
+
+#resolucion-mu {
+  animation: resolucion-barra 5s forwards;
+}
+
+
+@keyframes resolucion-barra {
+  100%{
+    width: 80%;
+  }
+}
+
+#pro-mu {
+  animation: pro-barra 3s forwards;
+}
+
+
+@keyframes pro-barra {
+  100%{
+    width: 90%;
+  }
+}
+
+#trabajo-mu {
+  animation: trabajo-barra 4s forwards;
+}
+
+
+@keyframes trabajo-barra {
+  100%{
+    width: 85%;
+  }
+}
+
+/* skilss */
+
+.contenedor-skills {
+  margin: 8rem auto;
+  background-color: var(--bg-secondary);
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  width: 60%;
+  color: var(--text-secondary)
+}
+
+.skills h3 {
+  letter-spacing: 0.2rem;
+}
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
+  .titulo-sobre h2{
+    margin: 0;
+    font-size: 3rem;
+  }
+  .contenedor-habilidades h3 {
+    font-size: 2rem;
+  }
+  .about-me{
+    height: 70rem;
+  }
+  .about-me h1 {
+    font-size: 1.2rem;
+  }
+  .titulo-sobre p {
+    font-size: 1rem;
+  }
+  .detalles span{
+    font-size: 1.2rem;
+  }
+  .descripcion-info{
+    overflow: scroll;
+  }
+  .descripcion {
+    padding: 0 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    
+  }
+  
   .navbar {
     bottom: 0;
     width: 100vw;
@@ -505,3 +709,4 @@ footer {
 .solar #solarIcon {
   display: block;
 }
+
