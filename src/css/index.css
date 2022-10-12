@@ -627,6 +627,11 @@ font-family: 'Silkscreen', cursive;
   font-weight: 600;
   color: var(--text-secondary);
   cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.botones-show input:hover {
+  background-color: #9b3575c9;
 }
 
 .container-proyectos {
@@ -645,6 +650,7 @@ font-family: 'Silkscreen', cursive;
 .container-proyectos img {
   height: 100%;
   transition: all 0.5s ease-in-out;
+  filter: opacity(0.4) drop-shadow(0 0 0 rgb(42, 22, 95));
 }
 
 .capa{
