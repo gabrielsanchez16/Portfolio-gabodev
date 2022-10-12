@@ -547,6 +547,9 @@ font-family: 'Silkscreen', cursive;
   border-left: 0.5rem solid #df49a6;
   padding: 0 4rem;
   position: relative;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Silkscreen', cursive;
+
 }
 
 .bola1 , .bola2, .bola3 {
@@ -556,35 +559,21 @@ font-family: 'Silkscreen', cursive;
   background-color: var(--bg-secondary);
   border: 0.5rem solid #df49a6;
 }
-.raya1, .raya2, .raya3 {
-  position: absolute;
-  width: 1.2rem;
-  background-color: var(--bg-secondary);
-  border: 0.2rem solid #df49a6;
-}
-.raya1{
-  top:43%;
-  left:0.5%
-}
+
+
 .bola1 {
   top: 40.5%;
-  left: -1.5%;
+  left: -1.2%;
 }
-.raya2 {
-  top:4.5%;
-  left: 0.6%
-}
+
 .bola2 {
   top:2%;
-  left: -1.3%
+  left: -1.2%
 }
-.raya3 {
-  bottom: 4%;
-  left: 0.6%;
-}
+
 .bola3{
   bottom: 2%;
-  left:-1.5%;
+  left:-1.2%;
 }
 .flex-universidad {
   display: flex;
@@ -605,6 +594,43 @@ font-family: 'Silkscreen', cursive;
   width: 13rem;
   height: 16rem;
 }
+
+/*  Works    */
+
+
+.works {
+  margin: 8rem auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  width: 80%;
+  color: var(--text-secondary)
+}
+.works h1 {
+  letter-spacing: 0.2rem;
+}
+
+.botones-show {
+  display: flex;
+  justify-content: space-around;
+}
+
+.botones-show input {
+  background-color: var(--bg-secondary);
+  border: 0.1rem solid var(--text-secondary);
+  padding: 2rem 4rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+
+
+
 
 
 /* Small screens */

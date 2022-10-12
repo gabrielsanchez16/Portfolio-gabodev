@@ -17,6 +17,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Silkscreen:wght@400;700&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/index.css">
     <link rel="icon" href="./src/img/hacker (1).png">
     <title>Gabriel Sanchez | About-me</title>
@@ -159,39 +160,41 @@
         </nav>
     </header>
   
-    <div class="contenedor-sobre">
-        <div class="about-me">
+    <div  class="contenedor-sobre">
+        <div data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" class="about-me">
 
-            <img src="./src/img/gabriel.jpeg" alt="foto gabriel">
+            <img data-aos="fade-up" src="./src/img/gabriel.jpeg" alt="foto gabriel">
             <h1><span class="typed"></span></h1>
 
 
-            <div class="palabras-claves">
+            <div data-aos="fade-right" class="palabras-claves">
                 <p>Runner | Developer | Student |</p>
             </div>
 
-            <div class="text-center titulo-sobre">
+            <div data-aos="fade-left" class="text-center titulo-sobre">
                 <h2>Sobre Mi</h2>
                 <p class="frase-moti">" No quiero ganarme la vida, quiero vivir "</p>
             </div>
             <div class="descripcion-info">
-                <p class="descripcion">
-                    - Hola Me llamo Gabriel Sanchez soy desarrollador Web Full Stack, poseo conocimientos en Tecnologías
+                <p data-aos="fade-right" class="descripcion">
+                    - Hola Me llamo, Gabriel Sanchez soy desarrollador Web Full-Stack, tengo conocimientos en Tecnologías
                     como <b>Node.Js, EXPRESS, React, Redux, React Router, JavaScript, HTML, CSS, TailwindCSS, MySQL, Git
                         y GitHub.</b>
                 </p>
-                <p class="descripcion">
-                    - Actualmente, me encuentro en el aprendizaje de más herramientas para él Desarrollo Web como:
-                    <b>Python, AWS y Algoritmos.</b> Me interesa seguir adquiriendo más conocimientos y perfeccionar los
-                    ya obtenidos Soy un apasionado a mundo del desarrollo, soy autodidacta y me gusta estar siempre
+                <p data-aos="fade-left" class="descripcion">
+                    - Actualmente, me encuentro en el constante aprendizaje de más herramientas para él Desarrollo Web como:
+                    <b>Python, AWS y Algoritmos.</b> Me gusta seguir adquiriendo conocimientos y perfeccionar los
+                    ya obtenidos. Soy un apasionado al mundo del desarrollo, soy autodidacta y me gusta estar siempre
                     adquiriendo conocimientos nuevos que nutran mi capacidad para el desarrollo de soluciones de
-                    problemas que se presenten y poder satisfacer las necesidades de los clientes.
+                    problemas que se presenten para poder satisfacer las necesidades de los clientes.
                 </p>
-                <p class="descripcion">
-                    - Me considero una persona muy responsable, amigable y respetuoso; practico el atletismo
+                <p data-aos="fade-right"  class="descripcion">
+                    - Me considero una persona muy responsable, amigable y respetuosa; practico el atletismo
                     especificamente las pruebas de largas distancia es una de mis pasiones considero que la mezcla del
                     deporte con el desarrollo de mis actividades me ayudad ha estar en equilibrio para poder estar al
-                    100%; tengo muchas ganas de seguir explotando mis habilidades, siempre abierto al aprendizaje y
+                    100%; tengo muchas ganas de seguir explotando mis habilidades, estoy siempre abierto al aprendizaje y
                     nuevas oportunidades.
                 </p>
 
@@ -200,11 +203,11 @@
         </div>
     </div>
 
-    <div class="habilidades-blandas">
-        <div class="contenedor-habilidades text-center">
-            <h3>Mis Habilidades</h3>
+    <div data-aos="flip-left" class="habilidades-blandas">
+        <div  class="contenedor-habilidades text-center">
+            <h3 data-aos="fade-right">Mis Habilidades</h3>
 
-            <div class="hab">
+            <div data-aos="fade-left" class="hab">
                 <div class="detalles">
                     <span>Comunicacion</span>
                     <span>90%</span>
@@ -213,7 +216,7 @@
                     <div id="comunicacion-mu"></div>
                 </div>
             </div>
-            <div class="hab">
+            <div data-aos="fade-right" class="hab">
                 <div class="detalles">
                     <span>Flexibilidad</span>
                     <span>95%</span>
@@ -222,7 +225,7 @@
                     <div id="flexibilidad-mu"></div>
                 </div>
             </div>
-            <div class="hab">
+            <div data-aos="fade-left" class="hab">
                 <div class="detalles">
                     <span>Resolucion Problemas</span>
                     <span>80%</span>
@@ -231,7 +234,7 @@
                     <div id="resolucion-mu"></div>
                 </div>
             </div>
-            <div class="hab">
+            <div data-aos="fade-right" class="hab">
                 <div class="detalles">
                     <span>Pro-Activo</span>
                     <span>90%</span>
@@ -240,7 +243,7 @@
                     <div id="pro-mu"></div>
                 </div>
             </div>
-            <div class="hab">
+            <div data-aos="fade-left" class="hab">
                 <div class="detalles">
                     <span>Trabajo en Equipo</span>
                     <span>85%</span>
@@ -254,7 +257,7 @@
 
 
     <footer>
-        <div class="content-footer">
+        <div data-aos="fade-right" class="content-footer">
             <p>Gabriel Sanchez 2022.Todos los Derechos Reservados</p>
         </div>
     </footer>
@@ -262,6 +265,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./src/js/about.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

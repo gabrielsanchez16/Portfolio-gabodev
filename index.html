@@ -170,9 +170,11 @@
                     <img class="flags_img" src="./src/img/us.svg" alt="">
                 </div>
             </div>
-            <div class="contenedor grid_portada text-center">
+            <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" class="contenedor grid_portada text-center" >
                 <div class="presentacion">
-                    <img class="gabriel" src="./src/img/gabriel.jpeg" alt="Gabriel">
+                    <img  class="gabriel" src="./src/img/gabriel.jpeg" alt="Gabriel">
                     <div class="redes">
                         <a href=""><i class="fa-brands fa-square-instagram"></i></a>
                         <a href=""><i class="fa-brands fa-linkedin"></i></a>
@@ -191,7 +193,7 @@
 
     </div>
     <footer>
-        <div class="content-footer">
+        <div class="content-footer" data-aos="fade-left">
             <p>Gabriel Sanchez 2022.Todos los Derechos Reservados</p>
         </div>
     </footer>
@@ -199,6 +201,9 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./src/js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./src/js/language.js"></script>
     <script src="./src/js/particles.js"></script>
     <script src="./src/js/app.js"></script>
