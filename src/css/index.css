@@ -326,9 +326,10 @@ font-family: 'Silkscreen', cursive;
 }
 
 .gabriel {
-  width: 32rem;
+  width: 22rem;
   border-radius: 50%;
   margin: 0 auto;
+  filter: blur(1.5px);
   border: 1rem solid var(--bg-primary);
   transition: .7s ease-in-out;
 }
@@ -336,6 +337,7 @@ font-family: 'Silkscreen', cursive;
 .gabriel:hover{
   transform: scale(1.1);
     border-color: #df49a6;
+    filter: blur(0);
 }
 
 .redes {
@@ -993,7 +995,8 @@ footer {
     max-width: 30rem;
 	}
   .gabriel {
-    width: 20rem;
+    width: 18rem;
+    filter: blur(0);
     margin: 0 auto;
   }
 
