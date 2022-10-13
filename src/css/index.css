@@ -716,14 +716,24 @@ font-family: 'Silkscreen', cursive;
   font-weight: 400;
 }
 
+.enviar{
+ cursor: pointer;
+ text-transform: uppercase;
+ font-weight: 600;
+ transition: 0.5s ease-in-out;
+}
+.enviar:hover {
+  
+  background-color: #b43d86a9; 
+}
+
 .contact-form button {
   padding: 1.5rem 3rem;
   border: 0.1rem solid #ffffff;
   color: #ffffff;
   border-radius: 1rem;
   font-weight: 600;
-  text-transform: uppercase;
-  background-color: #b43d86a9;
+  
 }
 
 .contact-form form {
@@ -762,17 +772,9 @@ font-family: 'Silkscreen', cursive;
   padding: 1rem;
   font-weight: 600;
 }
-
-.contact-form button {
-  padding: 1rem 2.5rem;
-  border: 0.1rem solid #ffffff;
-  font-size: 1.5rem;
-  color: #ffffff;
-  border-radius: 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  background-color: #b43d86a9;
-}
+.enviar{
+  font-size: 2rem;
+ }
 
 
   /*  Works    */
