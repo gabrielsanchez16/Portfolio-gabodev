@@ -1,7 +1,11 @@
 const themeMap = {
-    dark: "light",
+    solar: "dark",
+
     light: "solar",
-    solar: "dark"
+    
+    dark: "light",
+    
+    
   };
   
   const theme = localStorage.getItem('theme')

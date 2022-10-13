@@ -12,6 +12,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap"
         rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Silkscreen:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./src/css/index.css">
     <link rel="icon" href="./src/img/hacker (1).png">
     <title>Gabriel Sanchez|Contact/me</title>
@@ -153,27 +159,54 @@
             </ul>
         </nav>
     </header>
-    <div id="particles-js">
-        <main>
-            <div class="flags" id="flags">
-                <div class="flags_item" data-lenguage="es">
-                    <img class="flags_img" src="./src/img/es.svg" alt="">
-                </div>
-                <div class="flags_item" data-lenguage="en">
-                    <img class="flags_img" src="./src/img/us.svg" alt="">
-                </div>
-            </div>
-        </main>
-        <footer>
 
-        </footer>
+    <div class="contactame">
+        <h1>{Contactame}</h1>
+
+        <div class="contact-form">
+            <form netlify>
+                <div class="information">
+                    <span>
+                        <i class="fa-solid fa-envelopes-bulk"></i> gsanchezalarcon52gmail.com
+                    </span>
+                    <div><span class="typed"></span></div>
+                </div>
+                <p>
+                    <input type="text" name="nombre" placeholder="Nombre">
+                </p>
+                <p>
+                    <input type="text" name="asunto" placeholder="Asunto">
+                </p>
+                <p>
+                    <input type="email" name="email" placeholder="Email">
+                </p>
+                <p>
+                    <textarea name="mensaje" id="mensaje" cols="40" rows="10" placeholder="Mensaje"></textarea>
+                </p>
+                <p>
+                    <button type="submit">
+                        Enviar
+                    </button>
+                </p>
+            </form>
+        </div>
+
     </div>
 
+    <footer>
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="content-footer">
+            <p>Gabriel Sanchez 2022.Todos los Derechos Reservados</p>
+        </div>
+    </footer>
 
 
-
-    <script src="./src/js/particles.js"></script>
-    <script src="./src/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./src/js/contact.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://kit.fontawesome.com/1313268e8c.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

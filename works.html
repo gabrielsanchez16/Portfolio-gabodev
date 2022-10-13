@@ -2,23 +2,24 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/normalize.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/normalize.css" />
     <script defer src="./src/js/theme.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap"
         rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Silkscreen:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./src/css/index.css">
-    <link rel="icon" href="./src/img/hacker (1).png">
+        rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <link rel="icon" href="./src/img/hacker (1).png" />
     <title>Gabriel Sanchez | Works</title>
 </head>
 
@@ -161,70 +162,74 @@
     <div class="works">
         <h1>Portafolio</h1>
         <div class="botones-show">
-            <input id="proyectos" type="button" value="Proyectos">
-            <input id="skills" type="button" value="Skills">
+            <input id="proyectos" type="button" value="Proyectos" />
+            <input id="skills" type="button" value="Skills" />
         </div>
-        <div class="container-skills">
-
-        </div>
+        <div class="container-skills"></div>
         <div class="container-proyectos">
             <div>
                 <figure>
                     <a href="https://climaapp-by-gabrieldev.netlify.app/" target="_blank">
-                        <img src="./src/img/climaApp.png" alt="">
+                        <img src="./src/img/climaApp.png" alt="" />
                         <div class="capa">
                             <h3>App Clima</h3>
                             <p>Esta app fue uno de mis primeros proyectos con React</p>
                         </div>
                     </a>
-
                 </figure>
             </div>
             <div>
                 <figure>
                     <a href="https://help-quo-gabo-dev.netlify.app/" target="_blank">
-                        <img src="./src/img/helpquo.png" alt="helpquo">
+                        <img src="./src/img/helpquo.png" alt="helpquo" />
                         <div class="capa">
                             <h3>HelpQuo</h3>
-                            <p>HelpQuo es un administrador de citas para un hospital veterinario</p>
+                            <p>
+                                HelpQuo es un administrador de citas para un hospital
+                                veterinario
+                            </p>
                         </div>
                     </a>
-
                 </figure>
             </div>
             <div>
                 <figure>
                     <a href="https://rick-and-morty-gabrieldev.netlify.app/" target="_blank">
-                        <img src="./src/img/rickAndMorty.png" alt="rickAndMorty">
+                        <img src="./src/img/rickAndMorty.png" alt="rickAndMorty" />
                         <div class="capa">
                             <h3>Rick and Morty APP</h3>
-                            <p>En esta app se consume la API de rickAndMorty el cual se puede hacer la busqueda de
-                                personajes</p>
+                            <p>
+                                En esta app se consume la API de rickAndMorty el cual se puede
+                                hacer la busqueda de personajes
+                            </p>
                         </div>
                     </a>
-
                 </figure>
             </div>
             <div>
                 <figure>
-                    <a href="https://climaapp-by-gabrieldev.netlify.app/" target="_blank">
-                        <img src="./src/img/pokedex.png" alt="">
+                    <a href="https://pokedex-gabo-dev.netlify.app/" target="_blank">
+                        <img src="./src/img/pokedex.png" alt="" />
                         <div class="capa">
                             <h3>Pokedex</h3>
-                            <p>En esta app se consume la PokeAPI el cual se puede hacer la busqueda de personajes y
-                                tambien filtros</p>
+                            <p>
+                                En esta app se consume la PokeAPI el cual se puede hacer la
+                                busqueda de personajes y tambien filtros
+                            </p>
                         </div>
                     </a>
-
                 </figure>
             </div>
             <div>
                 <figure>
                     <a href="https://climaapp-by-gabrieldev.netlify.app/" target="_blank">
-                        <img src="./src/img/climaApp.png" alt="">
+                        <img src="./src/img/climaApp.png" alt="" />
                         <div class="capa">
                             <h3>Bienes Raices Turin</h3>
-                            <p>Un proyecto Full-Stack que consiste en una app de venta de Bienes Raices</p>
+                            <p>
+                                Un proyecto Full-Stack que consiste en una app de venta de
+                                Bienes Raices
+                            </p>
                         </div>
                     </a>
                 </figure>
@@ -232,14 +237,18 @@
         </div>
     </div>
     <footer>
-        <div class="content-footer">
+        <div data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" class="content-footer">
             <p>Gabriel Sanchez 2022.Todos los Derechos Reservados</p>
         </div>
     </footer>
 
 
-
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
