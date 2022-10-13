@@ -904,6 +904,9 @@ font-family: 'Silkscreen', cursive;
   .about-me{
     height: 70rem;
   }
+  .about-me img {
+    width: 15rem;
+  }
   .about-me h1 {
     font-size: 1.2rem;
   }
