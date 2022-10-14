@@ -529,7 +529,10 @@ font-family: 'Silkscreen', cursive;
   width: 80%;
   color: var(--text-secondary)
 }
+.universidad h2 {
 
+  margin: 0;
+}
 .educacion h1 {
   letter-spacing: 0.2rem;
   margin-bottom: 0;
@@ -563,12 +566,12 @@ font-family: 'Silkscreen', cursive;
 
 
 .bola1 {
-  top: 40.5%;
+  top: 33.5%;
   left: -1.2%;
 }
 
 .bola2 {
-  top:2%;
+  top:10%;
   left: -1.2%
 }
 
@@ -580,6 +583,7 @@ font-family: 'Silkscreen', cursive;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  gap: 2rem;
   flex-wrap: wrap-reverse;
   color: #df49a6;
   font-family: 'Lato', sans-serif;
@@ -620,8 +624,7 @@ font-family: 'Silkscreen', cursive;
   justify-content: center;
 }
 
-.botones-show input {
-  background-color: var(--bg-secondary);
+.botones-show button {
   border: 0.1rem solid var(--text-secondary);
   padding: 2rem 4rem;
   margin: 4rem 0;
@@ -631,8 +634,62 @@ font-family: 'Silkscreen', cursive;
   transition: 0.5s ease-in-out;
 }
 
-.botones-show input:hover {
+.botones-show button:hover {
   background-color: #9b3575c9;
+}
+
+.container-skills {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+
+.container-skills figure{
+  position: relative;
+  overflow: hidden;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 3rem;
+  transition: all 0.2s ease;
+  
+}
+.container-skills figure:hover {
+  border: 0.5rem solid black;
+}
+.container-skills img {
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+  
+}
+.container-skills figure:hover  .capa {
+  opacity: 1;
+  visibility: visible;
+}
+.container-skills figure:hover  img {
+  transform: scale(1.3);
+  
+}
+.container-skills .capa{
+  position: absolute;
+  width: 100%;
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Silkscreen', cursive;
+  height: 100%;
+  font-size: 1.5rem;
+  top: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  backdrop-filter: blur(0.5px);
+  background-color: #161616dc;
+  transition: all 0.5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .container-proyectos {
@@ -654,7 +711,7 @@ font-family: 'Silkscreen', cursive;
   filter: opacity(0.4) drop-shadow(0 0 0 rgb(42, 22, 95));
 }
 
-.capa{
+.container-proyectos .capa{
   position: absolute;
   width: 100%;
   color: var(--bg-primary);
@@ -664,7 +721,11 @@ font-family: 'Silkscreen', cursive;
   font-size: 1.3rem;
   top: 0;
   padding: 0 1rem;
-  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(1px);
   background-color: #9b3576a8;
   transition: all 0.5s ease-in-out;
   visibility: hidden;
@@ -785,7 +846,7 @@ font-family: 'Silkscreen', cursive;
 .works {
 
   width: 90%;
-  
+  padding: 0.8rem 0;
 }
 .works h1 {
   letter-spacing: 0.2rem;
@@ -793,12 +854,26 @@ font-family: 'Silkscreen', cursive;
 }
 
 
-.botones-show input {
+.botones-show button {
   font-size: 1.2rem;
   padding: 1rem 3rem;
   margin: 0 0 3rem;
 }
-
+.container-skills{
+  gap: 0;
+}
+.container-skills figure{
+  position: relative;
+  overflow: hidden;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 1rem;
+  transition: all 0.2s ease;
+  
+}
+.container-flex-t {
+  display: inline-block;
+}
 .container-proyectos figure{
   position: relative;
   overflow: hidden;
@@ -811,7 +886,7 @@ font-family: 'Silkscreen', cursive;
   transition: all 0.5s ease-in-out;
 }
 
-.capa{
+.container-proyectos .capa{
   font-size: 0.8rem;
   top: 0;
   opacity: 1;
@@ -863,12 +938,12 @@ font-family: 'Silkscreen', cursive;
   }
   
   .bola1 {
-    top: 40.5%;
+    top: 27.5%;
     left: -3%;
   }
  
   .bola2 {
-    top:2%;
+    top:4%;
     left: -3%
   }
  
@@ -881,6 +956,7 @@ font-family: 'Silkscreen', cursive;
   }
   .universidad h2 {
     font-size: 2rem;
+    line-height: 3rem;
   }
   .container-educacion {
     font-size: 1rem;
@@ -1084,7 +1160,14 @@ footer {
 }
 
 
+.hidden {
+  display: none;
+}
 
+.button-select {
+  background-color: #9b3575c9;
+}
 
-
-
+.button-unselect {
+  background-color: var(--bg-secondary);
+}
