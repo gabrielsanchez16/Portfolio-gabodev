@@ -368,6 +368,25 @@ main {
   font-weight: 600;
 }
 
+.contain_cv {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contain_cv a {
+  background-color: var(--bg-secondary);
+  color: #df49a6;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: .7s ease-in-out;
+
+}
+
+.contain_cv a:hover{
+  background: #df49a6;
+  color: var(--profesion);
+}
 
 /* Sobre mi */
 
@@ -843,6 +862,9 @@ main {
 /* Small screens */
 @media only screen and (max-width: 600px) {
 
+  .contain_cv a{
+    font-size: 1.2rem;
+  }
   /* Contacto  */
   .contactame {
     width: 90%;
