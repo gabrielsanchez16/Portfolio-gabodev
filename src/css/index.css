@@ -14,12 +14,14 @@ html {
   font-size: 62.5%;
   /*1rem igual a 10px*/
   list-style: none;
+  scrollbar-width:none;
 }
 
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+  scrollbar-width:0;
 }
 
 body {
@@ -751,6 +753,7 @@ main {
   height: 100%;
   transition: all 0.5s ease-in-out;
   filter: opacity(0.4) drop-shadow(0 0 0 rgb(42, 22, 95));
+  object-fit: cover;
 }
 
 .container-proyectos .capa {
@@ -805,6 +808,8 @@ main {
   width: 80%;
 
 }
+
+.figure
 
 .contactame h1 {
   letter-spacing: 0.2rem;
@@ -943,6 +948,7 @@ main {
   .container-proyectos img {
     height: 100%;
     transition: all 0.5s ease-in-out;
+    object-fit: cover;
   }
 
   .container-proyectos .capa {
