@@ -20,20 +20,20 @@ var pJS = function(tag_id, params){
     },
     particles: {
       number: {
-        value: 400,
+        value: 80,
         density: {
           enable: true,
           value_area: 800
         }
       },
       color: {
-        value: '#fff'
+        value: '#ffffff'
       },
       shape: {
         type: 'circle',
         stroke: {
-          width: 0,
-          color: '#ff0000'
+          width: 1,
+          color: '#000000'
         },
         polygon: {
           nb_sides: 5
@@ -45,30 +45,30 @@ var pJS = function(tag_id, params){
         }
       },
       opacity: {
-        value: 1,
+        value: 0.5,
         random: false,
         anim: {
           enable: false,
-          speed: 3,
-          opacity_min: 0,
-          sync: false
+          speed: 1,
+          opacity_min: 0.1,
+          sync: true
         }
       },
       size: {
-        value: 20,
-        random: false,
+        value: 3,
+        random: true,
         anim: {
           enable: false,
-          speed: 20,
-          size_min: 0,
+          speed: 40,
+          size_min: 0.1,
           sync: false
         }
       },
       line_linked: {
         enable: true,
-        distance: 100,
-        color: '#fff',
-        opacity: 1,
+        distance: 150,
+        color: '#ffffff',
+        opacity: 0.4,
         width: 1
       },
       move: {
@@ -78,9 +78,9 @@ var pJS = function(tag_id, params){
         random: false,
         straight: false,
         out_mode: 'out',
-        bounce: true,
+        bounce: false,
         attract: {
-          enable: false,
+          enable: true,
           rotateX: 3000,
           rotateY: 3000
         }
@@ -101,15 +101,15 @@ var pJS = function(tag_id, params){
         resize: true
       },
       modes: {
-        grab:{
-          distance: 100,
-          line_linked:{
+        grab: {
+          distance: 400,
+          line_linked: {
             opacity: 1
           }
         },
         bubble:{
-          distance: 200,
-          size: 80,
+          distance: 400,
+          size: 40,
           duration: 0.4
         },
         repulse:{
@@ -125,7 +125,7 @@ var pJS = function(tag_id, params){
       },
       mouse:{}
     },
-    retina_detect: false,
+    retina_detect: true,
     fn: {
       interact: {},
       modes: {},
