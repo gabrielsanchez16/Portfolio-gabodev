@@ -263,7 +263,7 @@ main {
 
 .logotipo .subtitulo {
   text-align: center;
-  color: #df49a6;
+  color:var(--profesion);
   background: var(--bg-secondary);
   padding: 1.2rem 2rem;
   margin: 0 auto;
@@ -272,13 +272,12 @@ main {
   font-size: 2rem;
   font-family: 'Noto Sans', sans-serif;
   text-transform: uppercase;
-
   font-family: 'Lato', sans-serif;
   font-family: 'Silkscreen', cursive;
 }
 
 .logotipo:hover .subtitulo {
-  background: #df49a6;
+  background: var(--bg-primary);
   color: var(--profesion);
 }
 
@@ -294,6 +293,7 @@ main {
   flex-direction: column;
   position: relative;
   transition: .3s ease all;
+  color: var(--profesion);
 }
 
 .texto-animado>div.animacion {
@@ -340,7 +340,7 @@ main {
 
 .gabriel:hover {
   transform: scale(1.1);
-  border-color: #df49a6;
+  border-color: var(--profesion);
   filter: blur(0);
 }
 
@@ -362,13 +362,13 @@ main {
 }
 .redes a {
   font-size: 3rem;
-  color: #df49a6;
-  transition: .5s ease-in-out;
+  color: var(--profesion);
+  transition: .5s ease;
 }
 
 .redes a:hover {
-  font-size: 3rem;
-  color: #ffffff;
+  transform: scale(1.3);
+  color:var(--text-primary)
 }
 
 .content-footer {
@@ -594,7 +594,7 @@ main {
 
 
 .universidad {
-  border-left: 0.5rem solid #df49a6;
+  border-left: 0.5rem solid var(--profesion);
   padding: 0 4rem;
   position: relative;
 
@@ -608,7 +608,7 @@ main {
   border-radius: 50%;
   padding: 0.5rem;
   background-color: var(--bg-secondary);
-  border: 0.5rem solid #df49a6;
+  border: 0.5rem solid var(--profesion);
 }
 
 
@@ -633,7 +633,7 @@ main {
   justify-content: space-around;
   gap: 2rem;
   flex-wrap: wrap-reverse;
-  color: #df49a6;
+  color: var(--profesion);
   font-family: 'Lato', sans-serif;
   font-family: 'Silkscreen', cursive;
 }
@@ -681,18 +681,22 @@ main {
 }
 
 .botones-show button:hover {
-  background-color: #9b3575c9;
+  background-color: #582424c9;
 }
 
 .container-skills {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
   flex-wrap: wrap;
   transition: 0.7s ease-in-out;
 }
 
+
+.container-skills .container-flex-t{
+  margin-bottom: 1rem;
+}
 
 .container-skills .figure {
   position: relative;
@@ -712,7 +716,7 @@ main {
   height: 100%;
   object-fit: cover;
   transition: all 0.5s ease-in-out;
-
+  background-color: white;
 }
 
 .container-skills .figure:hover .capa {
@@ -772,7 +776,7 @@ main {
 .container-proyectos .capa {
   position: absolute;
   width: 100%;
-  color: var(--bg-primary);
+  color: white;
   font-family: 'Lato', sans-serif;
   font-family: 'Silkscreen', cursive;
   height: 100%;
@@ -783,8 +787,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(1px);
-  background-color: #9b3576a8;
+  backdrop-filter: blur(10px);
+  background-color: #000000ab;
   transition: all 0.5s ease-in-out;
   visibility: hidden;
   opacity: 0;
@@ -794,6 +798,7 @@ main {
   font-family: 'Lato', sans-serif;
   font-family: 'Silkscreen', cursive;
   font-size: 1.8rem;
+  color: white;
 }
 
 .container-proyectos .figure:hover .capa {
@@ -1256,15 +1261,16 @@ main {
 }
 
 .light {
-  --text-primary: #1f1f1f;
-  --text-secondary: #000000;
-  --bg-primary: #ffffff;
-  --bg-secondary: #e4e4e4;
+  --text-primary: #ffffff;
+  --text-secondary: #e4e4e4;
+  --bg-primary: #673030;
+  --bg-secondary: #4f1d1d;
 }
 
 .solar {
   --text-primary: #576e75;
   --text-secondary: #35535c;
+  --profesion:rgb(150, 150, 150);
   --bg-primary: #fdf6e3;
   --bg-secondary: #f5e5b8;
 }
