@@ -40,8 +40,8 @@ var pJS = function(tag_id, params){
         },
         image: {
           src: '',
-          width: 100,
-          height: 100
+          width: 1100,
+          height: 1100
         }
       },
       opacity: {
