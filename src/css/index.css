@@ -330,18 +330,18 @@ main {
 }
 
 .gabriel {
-  width: 30rem;
-  height: 30rem;
+  width: 31rem;
+  height: 40rem;
   object-fit: cover;
   border-radius: 50%;
   margin: 0 auto;
-  filter: blur(1px);
+  filter: blur(.3px);
   border: 1rem solid var(--bg-primary);
   transition: .5s ease;
 }
 
 .gabriel:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
   border-color: var(--profesion);
   filter: blur(0);
 }
